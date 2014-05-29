@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>1532 Harrison</title>
+		
+		<style>
+		
+			*{
+				font-family:brandon-grotesque;
+			}
+		
+			.img_wrapper{
+			    position: relative;
+			    padding-top: 75%;
+			    overflow: hidden;
+			}
+
+			.img_wrapper img{
+			    position: absolute;
+			    top: 0;
+			    width: 100%;
+			    opacity: 0;
+				-webkit-transition: opacity 1s;
+			    -moz-transition: opacity 1s;
+			    -ms-transition: opacity 1s;
+			    transition: opacity 1s;
+			}
+			
+			.img_wrapper.loaded img{
+			    opacity: 1;
+			}
+			
+			#intro{
+				position:absolute;
+				top:50px;
+				width:100%;
+				text-align:center;
+				z-index:100;
+				opacity: 0;
+				font-size:3em;
+				text-transform:uppercase;
+					-webkit-transition: all 400ms;
+				    -moz-transition: all 400ms;
+				    -ms-transition: all 400ms;
+				    transition: all 400ms;
+			}
+			
+			#intro.positioned{
+				opacity:1;
+				-ms-transform:translate(0,100px); /* IE 9 */
+				-webkit-transform:translate(0,100px); /* Chrome, Safari, Opera */
+				transform:translate(0,100px); /* Standard syntax */
+			}
+		
+		</style>
+		
+		<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.js'></script>
+		
+		<script>
+		
+			function positionText(){
+				$('#intro').addClass('positioned');
+			}
+			
+		
+			function imgLoaded(img, callback){
+			    var $img = $(img);
+				$img.parent().addClass('loaded');
+				
+				callback();
+				
+			};
+		</script>
+	
+		<!-- Typekit -->
+		
+		<script type="text/javascript" src="//use.typekit.net/mbl6lqf.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		
+	</head>
+
+	<body>
+	
+		<div class="img_wrapper">
+		    <img src="img/building-rendering.jpg" alt="" onload="imgLoaded(this,positionText)"/>
+		</div>
+		
+		<div id="intro">1532 Harrison</div>
+
+	</body>
+	
+	
+
+
+</html>
