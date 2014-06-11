@@ -12,7 +12,6 @@ $(document).ready(function(){
       slideshowID = $(this).attr('id'),
       flipsnap = new Flipsnap(this, {transitionDuration: 600});
 
-  //mixpanel.track('YiR/2013 Initialize');
 
   flipsnap.element.addEventListener('fspointmove', function(e) {
     $('.shifty').removeClass('show-menu');
@@ -52,13 +51,11 @@ $(document).ready(function(){
   $('.js-slide-next').click(function(){
     closeModals();
     flipsnap.toNext();
-    //mixpanel.track('YiR/2013 Next', { 'keypress' : false });
   });
 
   $('.js-slide-previous').click(function(){
     closeModals();
     flipsnap.toPrev();
-    //mixpanel.track('YiR/2013 Previous', { 'keypress' : false });
   });
 
   if (!flipsnap.hasPrev()) {
@@ -76,7 +73,6 @@ $(document).ready(function(){
 
   $('.js-shifty-toggle').click(function(){
     toggleMenu();
-    //mixpanel.track('YiR/2013 View All');
   });
 
   function closeModals(){
@@ -103,13 +99,11 @@ $(document).ready(function(){
     if (e.keyCode === 37) {
       closeModals();
       flipsnap.toPrev();
-      //mixpanel.track('YiR/2013 Previous', { 'keypress' : true });
       return false;
     }
     if (e.keyCode === 39) {
       closeModals();
       flipsnap.toNext();
-      //mixpanel.track('YiR/2013 Next', { 'keypress' : true });
       return false;
     }
     if(e.keyCode === 38 || e.keyCode === 40){
@@ -132,7 +126,7 @@ $(document).ready(function(){
     })
   }
 
-  console.log(slideshowID);
+  //console.log(slideshowID);
 
 
   });
