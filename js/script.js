@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	
 	var headerHeight	= $('#site-header').height(),
-		twitterURL		= 'http://api.twitter.com/1/statuses/user_timeline.json?callback=?&screen_name=cinemaandspice&count=100';
+		twitterURL		= 'http://api.twitter.com/1/statuses/user_timeline.json?callback=?&screen_name=1532harrison&count=100';
 	
 	var scrollorama = $.scrollorama({
         blocks:'.scrollblock'
@@ -16,7 +16,9 @@ $(document).ready(function(){
 		var winHeight 		= $(window).height(),
 			fullWidthHeight = (winHeight - 60),
 			missionPosition	= (fullWidthHeight - $('#mission-statement').height() + headerHeight) * .5;					
-			
+		if($(window).height() < 700){
+		//	missionPosition = 65;
+		}	
 		$('#introduction .full-width-image').css('height', fullWidthHeight);
 		$('#mission-statement').css('top', missionPosition);
 	}

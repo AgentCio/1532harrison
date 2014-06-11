@@ -1,13 +1,352 @@
 ---
-layout: default
-title: Your New Jekyll Site
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+		<title>1532 Harrison</title>
+	
+		<!-- Bootstrap -->
+	    <link href="css/bootstrap.css" rel="stylesheet">
+
+			{% include scripts.html %}
+
+	
+	</head>
+
+	<body>
+		
+		<header id="site-header">
+			<div id="logo"></div>
+			<a id="nav-toggle" data-toggle="collapse" href=".collapse">
+				<svg width="54" height="54" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+					<g>
+						<path fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="bevel" d="m 5,20 40,0"/>
+						<path fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="bevel" d="m 5,28 40,0"/>
+						<path fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="bevel" d="m 5,36 40,0"/>
+					</g>
+				</svg>
+			</a>
+			<nav id="primary-nav">
+				<div class="container">
+					<ul class="list-unstyled list-inline row collapse">
+						<li class=""><a class="scrollTo" href="#the-project">Project</a></li>
+						<li class=""><a class="scrollTo" href="#coliving-overview">Coliving</a></li>
+						<li class=""><a class="scrollTo" href="#neighborhood">Neighborhood</a></li>
+						<li class=""><a class="scrollTo" href="#community-involvement">Process</a></li>
+						<li class=""><a class="scrollTo" href="#team">Team</a></li>
+						<li class=""><a class="scrollTo" href="#tenants">Tenants</a></li>
+						<li class=""><a class="scrollTo" href="#contact">FAQs / Contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		
+		</header>
+
+		<section id="introduction">
+			
+			<div class="full-width-image" style="background:url('img/building-rendering.jpg');">
+				<div class="scrollblock">
+					<div class="transparent-background"></div>
+					<div id="mission-statement" class="text-white container">
+						
+						{% include mission-statement.html %}
+						
+						
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+		<section id="the-project">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 image-block" style="background:url('img/block-rendering.jpg')"></div>
+					<div class="col-md-6 text-block background-clr-1">
+
+						{% include purpose.html %}
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		{% include building-drawings.html %}
+
+		<section id="coliving-overview">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 text-block background-clr-2">
+						{% include rethinking-home.html %}
+					</div>
+					<div class="col-md-6 image-block" style="background:url('img/rethinking-photo.jpg')"></div>
+				</div>
+				
+				<div class="row background-clr-1 pad-me">
+					<h2 class="text-center">See the Difference</h2>
+					<div class="col-md-6">
+						<div id="floorplan-conventional" class="floorplan"></div>
+						<h3 class="text-center">Standard Studio/Micro-Unit Layout</h3>
+						<ul class="list-unstyled">
+							<li class="text-center">No Shared Living Space</li>
+							<li class="text-center">Approx. 6.5 Conventional Studios</li>
+						</ul>
+					</div>
+					<div class="col-md-6">
+						<div id="floorplan-coliving" class="floorplan"></div>
+						<h3 class="text-center">Coliving Housing Approach</h3>
+						<ul class="list-unstyled">
+							<li class="text-center">Shared Living Space (living, dining, cooking &amp; laundry)</li>
+							<li class="text-center">9 Private Suites (each has its own bathroom, kitchenette &amp; private balcony)</li>
+							<li class="text-center">TODO: Add Anatomy of a Private Suite with graphic of private suite</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="alternative">
+			<div class="container">
+				<div class="row pad-me">
+					<h2 class="text-center">A Rental Apartment Alternative</h2>
+					<h2 class="">TODO: insert dynamic dropdown behavior</h2>
+				</div>
+			</div>
+			
+			<div class="">
+				<div class="container">
+					<div class="row pad-me">
+						<div class="col-md-5">
+							<h2>Rental alternative details exposed</h2>
+							<p>We may also pursue a more conventional housing program.   This option would be identical to the exterior of the Coliving housing project, but the interior would contain approximately 119 independent residential units instead of 28 Coliving houses.</p>
+
+							<p>The proposed residential units would include a mix of studios, one-bedroom and two-bedroom residences.  A full underground garage would include, per Planning Code, up to 89 off-street parking spaces and a minimum of 105 bicycle parking spaces.  An approximately 250-gsf bicycle maintenance area would be located at street level, as well as an approximately 2,000 gsf ground floor retail space.</p>
+
+							<p>We will choose between the Coliving and conventional before or after entitlements.  We invite your feedback [jump to 7.0 FAQ/Contact Section] on the conventional approach as well as the Coliving approach.</p>
+						</div>
+						<div class="col-md-6 col-md-offset-1">
+							
+							<div class="meeting row">
+								<div>
+									<h3>More to come...</h3>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+
+		<section id="neighborhood">
+			
+			<div class="slideshow-container">
+				
+				<div class="flip-nav flip-nav-left js-slide-previous">
+					<div class="table-cell">&lt;</div>
+				</div>
+				<div class="flip-nav flip-nav-right js-slide-next">
+					<div class="table-cell">&gt;</div>
+				</div>
+				
+				<div id="thehood-slideshow" class="slideshow">
+					<div class="slide full-width-image" style="background:url('img/soma.jpg')"></div>
+					<div class="slide full-width-image" style="background:url('img/soma.jpg')"></div>
+				</div>
+			
+			</div>
+			
+			
+			<div class="container-fluid">
+
+				<div class="row">
+					
+					<div id="neighborhood-map" class="col-md-6 image-block" style="background:url('img/map.jpg')"></div>
+
+					<div class="col-md-6 text-block background-clr-1" style="overflow:scroll;">
+						{% include neighborhood.html %}
+					</div>
+				
+				</div>
+			
+			</div>
+
+		</section>
+
+		
+		<section id="community-involvement">
+
+			<div class="container">
+				<div class="row pad-me">
+					<h2 class="text-center">Process</h2>
+					<!-- <div id="project-timeline" class="col-md-12">
+						<img src="img/project-timeline.jpg" alt="project timeline">
+					</div> -->
+				</div>
+			</div>
+			
+			<div class="background-clr-1">
+				<div class="container">
+					<div class="row pad-me">
+						<div class="col-md-5">
+							<h2>Community Workshops</h2>
+							<p>Join our mailing list to learn about upcoming community meetings and project updates.</p>
+							<button class="primary-button" data-toggle="modal" data-target="#myModal">Join Newsletter</button>
+						</div>
+						<div class="col-md-6 col-md-offset-1">
+							<div class="meeting row">
+								<div class="col-md-4 meeting-date">8.12.14</div>
+								<div class="col-md-8 meeting-info">
+									<h3>West SOMA Neighbors Meeting</h3>
+									The Eagle Tavern
+								</div>
+							</div>
+						
+							<div class="meeting row">
+								<div class="col-md-4 meeting-date">12.9.14</div>
+								<div class="col-md-8 meeting-info">
+									<h3>West SOMA Neighbors Meeting</h3>
+									The Eagle Tavern
+								</div>
+							</div>
+						
+							<div class="meeting row">
+								<div class="col-md-4 meeting-date">4.4.15</div>
+								<div class="col-md-8 meeting-info">
+									<h3>West SOMA Neighbors Meeting</h3>
+									The Eagle Tavern
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+
+
+		<section id="team">
+
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 text-block background-clr-2">
+						<h2>The Team</h2>
+						<p>Architects, builders, and thinkers thoughtfully rethinking the way we live.</p>
+						<!--
+						<ul class="list-unstyled">
+							<li><a href="http://buildinc.biz" alt="Build Inc." target="_blank">Build Inc.</a></li>
+							<li><a href="http://opendoor.io" alt="Open Door" target="_blank">Open Door</a></li>
+							<li><a href="http://www.macyarchitecture.com" alt="Macy Architecture" target="_blank">Macy Architecture</a></li>
+							<li><a href="http://rebargroup.org" alt="Gehl Studio" target="_blank">Gehl Studio</a></li>
+							<li><a href="http://pfaulong.com" alt="Pfeau Long Architecture" target="_blank">Pfau Long Architecture</a></li>
+						</ul>
+						-->
+
+						<ul id="flipsnap-controls" class="list-unstyled" style="margin-top:0px;">
+							<li class="currentToggle">Build Inc.</li>
+							<li>Open Door</li>
+							<li>Macy Architecture</li>
+							<li>Gehl Studio</li>
+							<li>Pfau Long Architecture</li>
+							<li>UP</li>
+							<li>Sherwood Design Engineers</li>
+						</ul>
+					</div>
+					<div class="col-md-6-fluid image-block">
+
+						<div class="slideshow-container">
+
+							<div id="team-slideshow" class="slideshow">
+								<div class="slide full-width-image" ><a href="http://buildinc.biz"><img src="img/build-inc.jpg" alt='Build inc'></a></div>
+								<div class="slide full-width-image" ><a href="http://opendoor.io"><img src="img/open-door.jpg" alt='Open Door'></a></div>
+								<div class="slide full-width-image" ><a href="http://www.macyarchitecture.com"><img src="img/macy-architecture.jpg" alt='Macy Architecture'></a></div>
+								<div class="slide full-width-image" ><a href="http://rebargroup.org"><img src="img/build-inc.jpg" alt='Gehl Studio'></a></div>
+								<div class="slide full-width-image" ><a href="http://pfaulong.com"><img src="img/pfau-long.jpg" alt='PFau'></a></div>
+								<div class="slide full-width-image" ><a href="http://buildinc.biz"><img src="img/up.jpg" alt='Up'></a></div>
+								<div class="slide full-width-image" ><a href="http://pfaulong.com"><img src="img/sherwood.jpg" alt='Sherwood'></a></div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+		</section>
+
+<!--
+		<section id="tenants" class="pad-me background-clr-3">
+			
+			<div class="container">
+				<h2>Tenants</h2>
+				<div class="row">
+					<div id="tweets-place" class="col-md-8">
+						<p>TODO: Add proper text</p>
+						<p>Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper.</p>
+					</div>
+-->
+					<!-- <div class="col-md-3 col-md-offset-1">
+						<a href="http://facebook.com/1532Harrison" alt="facebook" target="_blank" id="facebook-btn" class="square-btn"></a>
+						<a href="http://twitter.com/1532Harrison" alt="twitter" target="_blank" id="twitter-btn" class="square-btn"></a>
+					</div> -->
+<!-- 				</div>
+
+		</section>
+-->
+
+<section id="tenants">
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 text-block background-clr-1">
+				<h2>Tenants</h2>
+				<p>We are organizing Coliving housing groups now.  If you are interested to learn more about organizing a Coliving housing group or joining a group, please contact <a href="mailto:jay@opendoor.io">Open Door</a> - our Coliving partner.  Tell us your interests, post your bio and recruit your friends to join.   We’ll keep you abreast of developments and how you can get involved.</p>
+			</div>
+			<div class="col-md-6-fluid text-block">
+				<h2>News</h2>
+				<ul class="list-unstyled" style="margin-top:0px;">
+					<li><a href="http://www.spur.org/publications/article/2014-02-11/how-make-san-francisco-affordable-again">SPUR: How to Make San Francisco Affordable Again (scroll down to number 5)</a></li>
+					<li><a href="http://www.bizjournals.com/sanfrancisco/blog/2013/12/soma-development-would-put-new-twist.html?page=all">SF Biz Times: SoMa development would put new twist on commune living</a></li>
+					<li><a href="http://sf.curbed.com/archives/2013/12/09/modern_communal_living_could_be_headed_for_western_soma.php">Curbed SF: Modern Communal Living Could be Headed for Western SoMa</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+
+
+		<section id="contact" class="pad-me background-clr-1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<h3>Contact</h3>
+						<a href="mailto:info@1532harrison.com">info@1532harrison.com</a>
+						<h3>Location</h3>
+						1532 Harrison Street
+						San Francisco, CA 94103
+					</div>
+					<div class="col-md-4 col-md-offset-2">
+						<button class="primary-button" data-toggle="modal" data-target="#myModal">Download FAQ</button>
+						<button class="primary-button" data-toggle="modal" data-target="#myModal">Join Newsletter</button>
+						<a href="http://facebook.com/1532Harrison" target="_blank" id="facebook-btn" class="square-btn"></a>
+						<a href="http://twitter.com/1532Harrison" target="_blank" id="twitter-btn" class="square-btn"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		{% include modal.html %}
+		
+	</body>
+</html>
