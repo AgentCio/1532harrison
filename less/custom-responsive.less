@@ -1,6 +1,14 @@
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
-
+@media (max-width: @screen-sm-min) {
+        #logo {  
+                background-size:contain;  
+                width:210px;  
+        } 
+	#mission-statement{
+		top:65px;
+	}
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
 	#mission-statement {

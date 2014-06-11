@@ -17,7 +17,7 @@ $(document).ready(function(){
 			fullWidthHeight = (winHeight - 60),
 			missionPosition	= (fullWidthHeight - $('#mission-statement').height() + headerHeight) * .5;					
 		if($(window).height() < 700){
-		//	missionPosition = 65;
+			missionPosition = 65;
 		}	
 		$('#introduction .full-width-image').css('height', fullWidthHeight);
 		$('#mission-statement').css('top', missionPosition);
@@ -30,6 +30,7 @@ $(document).ready(function(){
 	});
 	
 	$('a.scrollTo').click(function(event) {
+		//Add class = "collapsed" to #nav-toggle
 		event.preventDefault ? event.preventDefault() : event.returnValue = false;
 		$url = $(this).attr('href');
 		$('html:not(:animated), body:not(:animated)').animate({

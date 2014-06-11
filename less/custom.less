@@ -88,13 +88,14 @@ p, li{
 .text-block{
 	padding:50px 40px;
 	height:460px;
+	overflow:scroll;
 	h2{
 		padding-bottom:40px;
 		margin-bottom:40px;
 		border-bottom:2px solid;
 	}
 	a{
-		font-size: 1.3em;
+		/*font-size: 1.3em;*/
 	}
 }
 
@@ -375,6 +376,38 @@ p, li{
 #team-slideshow{
 	.full-width-image{
 		height: 460px;
+		a { 
+			width: 100%;
+			height: 100%;
+			display: block;
+			background-size: cover;
+			background-repeat: no-repeat;
+			&.build-img {
+				background-image: url(../img/build-inc.jpg);
+			}
+			&.open-door-img {
+				background-image: url(../img/open-door.jpg);
+			}
+			&.macy-architecture-img{
+				background-image: url(../img/macy-architecture.jpg);
+			}
+			&.gehl-studio-img{
+				background-image: url(../img/build-inc.jpg);
+			}
+			&.phau-img {
+
+				background-image: url(../img/pfau-long.jpg);
+			}
+			&.up-img {
+				background-image: url(../img/up.jpg);
+				background-size: contain;
+				background-position: center center;
+			}
+			&.sherwood-img{
+				background-image: url(../img/sherwood.jpg);
+			}
+		}
+		
 	}
 }
 
