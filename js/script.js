@@ -16,7 +16,7 @@ $(document).ready(function(){
 		var winHeight 		= $(window).height(),
 			fullWidthHeight = (winHeight - 60),
 			missionPosition	= (fullWidthHeight - $('#mission-statement').height() + headerHeight) * .5;					
-		if($(window).height() < 700){
+		if($(window).height() < 700 && $(window).width() < 990){
 			missionPosition = 65;
 		}	
 		$('#introduction .full-width-image').css('height', fullWidthHeight);
