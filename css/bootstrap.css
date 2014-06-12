@@ -5812,6 +5812,9 @@ li {
 .pad-me {
   padding: 40px 0;
 }
+.padded {
+  padding: 40px 40px 40px 20px;
+}
 .text-block {
   padding: 50px 40px 0px 40px;
   height: 460px;
@@ -6068,7 +6071,7 @@ li {
   background-image: url(../img/macy-architecture.jpg);
 }
 #team-slideshow .full-width-image a.gehl-studio-img {
-  background-image: url(../img/build-inc.jpg);
+  background-image: url(../img/gehl-architects.jpg);
 }
 #team-slideshow .full-width-image a.phau-img {
   background-image: url(../img/pfau-long.jpg);
@@ -6126,7 +6129,7 @@ li {
   #nav-toggle {
     display: none;
   }
-  .collapse {
+  #primary-nav .collapse {
     display: block!important;
     height: auto!important;
     padding-bottom: 0;
@@ -6135,5 +6138,6 @@ li {
   #primary-nav li {
     width: 13%;
   }
+  /*end #primary-nav */
 }
 /* Large devices (large desktops, 1200px and up) */

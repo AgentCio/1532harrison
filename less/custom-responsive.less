@@ -22,23 +22,25 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
-	#nav-toggle{
+	#nav-toggle {
 		display:none;
 	}
-	
-	.collapse {
-		display: block!important;
-		height: auto!important;
-		padding-bottom: 0;
-		overflow: visible!important;
-	}
-	
-	#primary-nav li {
-		width: 13%;
-	}
-	
-}
 
+	#primary-nav {
+	
+		.collapse {
+			display: block!important;
+			height: auto!important;
+			padding-bottom: 0;
+			overflow: visible!important;
+		}
+	
+		li {
+			width: 13%;
+		}
+	
+	}/*end #primary-nav */
+}
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) {
 	
