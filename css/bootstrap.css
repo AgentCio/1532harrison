@@ -6104,15 +6104,39 @@ li {
 .no-top {
   margin-top: 0;
 }
+#neighborhood-image {
+  background: url('../img/soma.jpg');
+  min-height: 460px;
+  background-position-y: -200px;
+}
+#neighborhood .col-md-12 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+#the-news {
+  margin-top: 0px;
+}
+#the-news li {
+  padding-bottom: 10px;
+}
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
+@media (max-width: 480px) {
+  /* "phone" */
+  #mission-statement {
+    top: 65px;
+    font-size: 1.2em;
+  }
+}
 @media (max-width: 768px) {
+  /* "tablet" */
   #logo {
     background-size: contain;
     width: 210px;
   }
   #mission-statement {
     top: 65px;
+    font-size: 1.6em;
   }
 }
 /* Small devices (tablets, 768px and up) */

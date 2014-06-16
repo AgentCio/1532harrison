@@ -1,7 +1,7 @@
 // Variables
 
 @white: #ffffff;
-@black:	#111111;
+@black: #111111;
 @gray: #46525e;
 @peach: #f7a700;
 
@@ -14,9 +14,9 @@
 // Mixins
 
 .box-sizing (@boxsize) {
-	-webkit-box-sizing: @boxsize; 
-	-moz-box-sizing: @boxsize;    
-	box-sizing: @boxsize;        
+	-webkit-box-sizing: @boxsize;
+	-moz-box-sizing: @boxsize;
+	box-sizing: @boxsize;
 }
 
 .transition (@type, @time) {
@@ -30,7 +30,7 @@
 	-webkit-background-size: @backgroundsize !important;
 	-moz-background-size: @backgroundsize !important;
 	-o-background-size: @backgroundsize !important;
-	background-size: @backgroundsize !important;     
+	background-size: @backgroundsize !important;
 }
 
 
@@ -41,11 +41,11 @@
 	.box-sizing(border-box);
 }
 
-img{
+//img{
 	// max-width: 100%;
 	// width: 100%;
 	// height: auto;
-}
+//}
 
 p, li{
 	font-size: 1.3em;
@@ -432,4 +432,22 @@ p, li{
 
 .no-top{
 	margin-top:0;
+}
+
+#neighborhood-image{
+	background:url('../img/soma.jpg');
+	min-height:460px;
+	background-position-y: -200px;
+}
+
+#neighborhood .col-md-12{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#the-news{
+	margin-top:0px;
+	li{
+		padding-bottom: 10px;
+	}
 }

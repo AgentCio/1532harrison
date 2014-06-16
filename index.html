@@ -3,65 +3,32 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="shortcut icon" href="/favicon.ico">
 		<title>1532 Harrison</title>
-	
-		<!-- Bootstrap -->
-	    <link href="css/bootstrap.css" rel="stylesheet">
-
-			{% include scripts.html %}
-
-	
+		<link href="css/bootstrap.css" rel="stylesheet">
+		{% include scripts.html %}
 	</head>
 
 	<body>
-		
-		<header id="site-header">
-			<div id="logo"></div>
-			<a id="nav-toggle" data-toggle="collapse" href="#nav-bar-collapse">
-				<svg width="54" height="54" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-					<g>
-						<path fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="bevel" d="m 5,20 40,0"/>
-						<path fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="bevel" d="m 5,28 40,0"/>
-						<path fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="bevel" d="m 5,36 40,0"/>
-					</g>
-				</svg>
-			</a>
-			<nav id="primary-nav">
-				<div class="container">
-					<ul class="list-unstyled list-inline row collapse" id="nav-bar-collapse">
-						<li class=""><a class="scrollTo" href="#the-project">Project</a></li>
-						<li class=""><a class="scrollTo" href="#coliving-overview">Coliving</a></li>
-						<li class=""><a class="scrollTo" href="#neighborhood">Neighborhood</a></li>
-						<li class=""><a class="scrollTo" href="#community-involvement">Process</a></li>
-						<li class=""><a class="scrollTo" href="#team">Team</a></li>
-						<li class=""><a class="scrollTo" href="#tenants">Tenants</a></li>
-						<li class=""><a class="scrollTo" href="#contact">FAQs / Contact</a></li>
-					</ul>
-				</div>
-			</nav>
-		
-		</header>
+		{% include header.html %}
 
 		<section id="introduction">
-			
-			<div class="full-width-image" style="background:url('img/building-rendering.jpg');">
-				<div class="scrollblock">
-					<div class="transparent-background"></div>
-					<div id="mission-statement" class="text-white container">
-						
-						{% include mission-statement.html %}
-						
-						
+			<div class="container">
+				<div class="row">
+					<div class="full-width-image" style="background:url('img/building-rendering.jpg');">
+						<div class="scrollblock">
+							<div class="transparent-background"></div>
+							<div id="mission-statement" class="text-white container">
+								{% include mission-statement.html %}
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-
 		</section>
 
 		<section id="the-project">
@@ -69,9 +36,7 @@
 				<div class="row">
 					<div class="col-md-6 image-block" style="background:url('img/block-rendering.jpg')"></div>
 					<div class="col-md-6 text-block background-clr-1">
-
 						{% include purpose.html %}
-
 					</div>
 				</div>
 			</div>
@@ -109,52 +74,36 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-12 image-block" style="background:url('img/private-suite.png')"></div>
+					<div class="col-md-6 image-block" style="background:url('img/private-unit-1.jpg')"></div>
+					<div class="col-md-6 image-block" style="background:url('img/private-unit-2.jpg')"></div>
 				</div>
 			</div>
 		</section>
 
 		<section id="alternative">
 			<div class="container">
-				<div class="row pad-me">
+				<div class="row pad-me background-clr-2">
 					<h2 class="text-center" data-toggle="collapse" data-target="#rental-alernative-details">A Rental Apartment Alternative &gt;</h2>
 				</div>
 			</div>
 			{% include rental-alternative.html %}
 		</section>
 
-
 		<section id="neighborhood">
-			
-			<div class="slideshow-container">
-				
-				<div class="flip-nav flip-nav-left js-slide-previous">
-					<div class="table-cell">&lt;</div>
-				</div>
-				<div class="flip-nav flip-nav-right js-slide-next">
-					<div class="table-cell">&gt;</div>
-				</div>
-				
-				<div id="thehood-slideshow" class="slideshow">
-					<div class="slide full-width-image" style="background:url('img/soma.jpg')"></div>
-					<div class="slide full-width-image" style="background:url('img/soma.jpg')"></div>
-				</div>
-			
-			</div>
-			
-			
 			<div class="container">
-
 				<div class="row">
-					
+					<div class="col-md-12 image-block">
+						<div id="neighborhood-image"></div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
 					<div id="neighborhood-map" class="col-md-6 image-block" style="background:url('img/map.jpg')"></div>
-
 					<div class="col-md-6 text-block background-clr-1" style="overflow:scroll;">
 						{% include neighborhood.html %}
 					</div>
-				
 				</div>
-			
 			</div>
 
 		</section>
@@ -164,7 +113,6 @@
 
 			<div class="container">
 				<div class="row pad-me">
-					<!--<h2 class="text-center">Public Process Timeline</h2> -->
 					<div class="col-md-6">
 						{% include public-process.html %}
 					</div>
@@ -174,8 +122,8 @@
 				</div>
 			</div>
 			
-			<div class="background-clr-1">
-				<div class="container">
+			<div>
+				<div class="container background-clr-1">
 					<div class="row pad-me">
 						{% include community-workshops.html %}
 					</div>
@@ -185,7 +133,6 @@
 
 
 		<section id="team">
-
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 text-block background-clr-2">
@@ -193,13 +140,12 @@
 					</div>
 				</div>
 			</div>
-
 		</section>
 
 		<section id="tenants">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 text-block background-clr-1">
+					<div class="col-md-6 text-block">
 						{% include tenants.html %}
 					</div>
 					<div class="col-md-6-fluid text-block">
@@ -209,27 +155,11 @@
 			</div>
 		</section>
 
-		<section id="contact" class="pad-me background-clr-1">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<h3>Contact</h3>
-						<a href="mailto:info@1532harrison.com">info@1532harrison.com</a>
-						<h3>Location</h3>
-						1532 Harrison Street
-						San Francisco, CA 94103
-					</div>
-					<div class="col-md-4 col-md-offset-2 padded">
-						<button class="primary-button" data-toggle="modal" data-target="#myModal">Download FAQ</button>
-						<button class="primary-button" data-toggle="modal" data-target="#myModal">Join Newsletter</button>
-						<a href="http://facebook.com/1532Harrison" target="_blank" id="facebook-btn" class="square-btn"></a>
-						<a href="http://twitter.com/1532Harrison" target="_blank" id="twitter-btn" class="square-btn"></a>
-					</div>
-				</div>
-			</div>
+		<section id="contact">
+			{% include contact.html %}
 		</section>
 
 		{% include modal.html %}
 
 	</body>
-</html>                     
+</html>
