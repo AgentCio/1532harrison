@@ -1,3 +1,4 @@
 <IfModule pagespeed_module>
     ModPagespeed off
 </IfModule>
+ErrorDocument 404 "/404.html"

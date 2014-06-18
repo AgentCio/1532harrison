@@ -14,7 +14,7 @@ $(document).ready(function(){
 	function sizeFullScreenImages(){
 		var winHeight 		= $(window).height(),
 			fullWidthHeight = (winHeight - 60),
-			missionPosition	= (fullWidthHeight - $('#mission-statement').height() + headerHeight) * .5;					
+			missionPosition	= (fullWidthHeight - $('#mission-statement').height() + headerHeight) * .5;
 		if($(window).height() < 700 && $(window).width() < 990){
 			missionPosition = 65;
 		}	

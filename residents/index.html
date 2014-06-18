@@ -1,0 +1,52 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<title>1532 Harrison: Residents</title>
+		<link href="/css/bootstrap.css" rel="stylesheet">
+		{% include scripts.html %}
+	</head>
+
+	<body>
+		{% include header.html %}
+
+		<section>
+			<div class="container">
+				<div class="row" style="margin-top:140px;">
+					<div class="col-md-8">
+						TODO: Add text for introduction paragraph here.
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<div class="col-md-6 padded">
+								<a href="http://facebook.com/1532Harrison" target="_blank" id="facebook-btn" class="square-btn"></a>
+							</div>
+							<div class="col-md-6 padded">
+								<a href="http://twitter.com/1532Harrison" target="_blank" id="twitter-btn" class="square-btn"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="row">
+					{% include profiles.html %}
+				</div>
+			</div>
+		</section>
+
+		<section id="contact">
+			{% include contact.html %}
+		</section>
+		
+	</body>
+</html>
