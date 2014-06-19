@@ -54,7 +54,6 @@
 				</div>
 				
 				<div class="row background-clr-1 pad-me">
-					<h2 class="text-center">See the Difference</h2>
 					<div class="col-md-6">
 						<div id="floorplan-conventional" class="floorplan"></div>
 						<h3 class="text-center">Standard Studio/Micro-Unit Layout</h3>
@@ -82,8 +81,8 @@
 
 		<section id="alternative">
 			<div class="container">
-				<div class="row pad-me background-clr-2">
-					<h2 class="text-center" data-toggle="collapse" data-target="#rental-alernative-details">A Rental Apartment Alternative &gt;</h2>
+				<div class="row background-clr-2">
+					<h2 class="text-center section-title" data-toggle="collapse" data-target="#rental-alernative-details">A Rental Apartment Alternative &gt;</h2>
 				</div>
 			</div>
 			{% include rental-alternative.html %}
@@ -108,49 +107,72 @@
 
 		</section>
 
-		
-		<section id="community-involvement">
 
+		<section id="plaza">
 			<div class="container">
-				<div class="row pad-me">
-					<div class="col-md-6 bspecial">
-						{% include public-process.html %}
-					</div>
-					<div class="col-md-6 bspecial">
-						{% include meeting-timeline.html %}
-					</div>
+				<div class="row background-clr-2">
+					<h2 class="text-center section-title">Eagle Plaza</h2>
 				</div>
 			</div>
-			
-			<div>
+			{% include plaza.html %}
+		</section>
+
+
+		<section id="community-involvement">
+			<div class="container">
+				<div class="row background-clr-2">
+					<h2 class="text-center section-title">Process</h2>
+				</div>
+			</div>
+			<div id="process-details">
 				<div class="container background-clr-1">
 					<div class="row pad-me">
 						{% include community-workshops.html %}
 					</div>
 				</div>
 			</div>
+
+			<div class="container">
+				<div class="row background-clr-4">
+					<h2 class="text-center section-title" data-toggle="collapse" data-target="#more-process">More Process &gt;</h2>
+				</div>
+			</div>
+			
+			<div class="container" id="more-process">
+				<div class="row pad-me background-clr-0">
+					{% include public-process.html %}
+				</div>
+			</div>
+
 		</section>
 
 
 		<section id="team">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 text-block background-clr-2">
 						{% include the-team.html %}
-					</div>
 				</div>
 			</div>
 		</section>
 
 		<section id="residents">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-6 ">
-						{% include residents.html %}
+				<div class="row background-clr-2">
+					<h2 class="text-center section-title">Meet Prospective Residents</h2>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row background-clr-0">
+					<div class="col-md-6 bspecial" style="padding-top:20px;">
+						{% include residents-intro.html %}
 					</div>
-					<div class="col-md-6-fluid ">
+					<div class="col-md-6">
 						{% include news.html %}
 					</div>
+					<div class="col-md-12" id="resident-profiles">
+						{% include profiles.html %}
+					</div>
+					
 				</div>
 			</div>
 		</section>

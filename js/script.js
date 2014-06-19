@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	var headerHeight 	= $('#site-header').height();
-	var twitterURL		= 'http://api.twitter.com/1/statuses/user_timeline.json?callback=?&screen_name=1532harrison&count=100';
+	// var twitterURL		= 'http://api.twitter.com/1/statuses/user_timeline.json?callback=?&screen_name=1532harrison&count=100';
 
 	var scrollorama = $.scrollorama({
         blocks:'.scrollblock'
@@ -17,7 +17,13 @@ $(document).ready(function(){
 			missionPosition	= (fullWidthHeight - $('#mission-statement').height() + headerHeight) * .5;
 		if($(window).height() < 700 && $(window).width() < 990){
 			missionPosition = 65;
-		}	
+		}
+		if( $(window).width() > 1240){
+			missionPosition = 155;
+		}else{
+			missionPosition = 65;
+		}
+		console.info("missionPosition: " + missionPosition);
 		$('#introduction .full-width-image').css('height', fullWidthHeight);
 		$('#mission-statement').css('top', missionPosition);
 	}
@@ -43,7 +49,6 @@ $(document).ready(function(){
 
 	// Fetch Tweets and Add to Page
 	function ajaxLoadContent() {
-
 		$.ajax({
 			type: "GET",
 			url: "tweets.html",
@@ -57,6 +62,6 @@ $(document).ready(function(){
 		});
 	}
 
-	ajaxLoadContent();
+	// ajaxLoadContent();
 
 });

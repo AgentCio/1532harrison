@@ -4,7 +4,7 @@ $(document).ready(function(){
 
   var index = 0,                          // current location in slideshow
       $slides = $('.slide'),              // array of slide elements
-      slide = $slides[index],              // currently focused slide
+      slide = $slides[index],             // currently focused slide
       video = $(slide).find('video')[0],  // current video element
       videos = [],                        // array of video elements
       queued,                             // video to be played next

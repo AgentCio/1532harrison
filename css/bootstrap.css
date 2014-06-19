@@ -5782,6 +5782,9 @@ p,
 li {
   font-size: 1.3em;
 }
+.background-clr-0 {
+  background-color: #ffffff;
+}
 .background-clr-1 {
   background-color: #46525e;
   color: #f7a700;
@@ -5805,6 +5808,17 @@ li {
 }
 .background-clr-3 a {
   color: #46525e;
+}
+.background-clr-4 {
+  background-color: #303941;
+  color: #ffffff;
+}
+.background-clr-4 a {
+  color: #ffffff;
+}
+.background-clr-4 h2,
+.background-clr-4 h3 {
+  font-weight: 400;
 }
 .text-white {
   color: white;
@@ -6018,7 +6032,7 @@ li {
   position: absolute;
   top: 100px;
   width: 100%;
-  font-size: 2.0em;
+  font-size: 1.5em;
 }
 .scrollblock {
   position: absolute;
@@ -6094,8 +6108,8 @@ li {
 }
 #team-slideshow .full-width-image a.up-img {
   background-image: url(../img/up.jpg);
-  background-size: contain;
-  background-position: center center;
+  /*				background-size: contain;*/
+  /*				background-position: center center;*/
 }
 #team-slideshow .full-width-image a.sherwood-img {
   background-image: url(../img/sherwood.jpg);
@@ -6112,10 +6126,10 @@ li {
   transition: color 0.2s ease-in-out;
 }
 #flipsnap-controls li:hover {
-  color: #46525e;
+  color: #ffffff;
 }
 #flipsnap-controls li.currentToggle {
-  color: #46525e;
+  color: #ffffff;
 }
 .no-top {
   margin-top: 0;
@@ -6137,6 +6151,19 @@ li {
 .profile-image {
   margin-top: 20px;
 }
+#resident-profiles .top-border {
+  border-top: 2px solid #f7a700;
+  position: absolute;
+  left: 2.5%;
+  right: 2.5%;
+}
+.profile {
+  padding-bottom: 10px;
+}
+.section-title {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 @media (max-width: 480px) {
@@ -6154,7 +6181,7 @@ li {
   }
   #mission-statement {
     top: 65px;
-    font-size: 1.6em;
+    font-size: 1.5em;
   }
 }
 /* Small devices (tablets, 768px and up) */
@@ -6178,7 +6205,7 @@ li {
     overflow: visible!important;
   }
   #primary-nav li {
-    width: 13%;
+    width: 11%;
   }
   /*end #primary-nav */
 }
