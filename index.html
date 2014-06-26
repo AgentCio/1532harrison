@@ -1,4 +1,5 @@
 ---
+title: 1532 Harrison
 ---
 
 <!DOCTYPE html>
@@ -8,8 +9,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
 		<link rel="shortcut icon" href="/favicon.ico">
-		<title>1532 Harrison</title>
+		<title>{{ page.title }}</title>
 		<link href="css/bootstrap.css" rel="stylesheet">
+
+
 		{% include scripts.html %}
 	</head>
 
@@ -20,11 +23,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="masthead-image">
-						<div class="scrollblock">
+						<div class="scrollblock" style="position:relative !important;">
 							<div class="transparent-background"></div>
-							<div id="mission-statement" class="text-white container">
 								{% include mission-statement.html %}
-							</div>
 						</div>
 					</div>
 				</div>
@@ -54,7 +55,7 @@
 				</div>
 				
 				<div class="row background-clr-1 pad-me">
-					<div class="col-md-6">
+					<div class="col-lg-6">
 						<div id="floorplan-conventional" class="floorplan"></div>
 						<h3 class="text-center">Standard Studio/Micro-Unit Layout</h3>
 						<ul class="list-unstyled">
@@ -62,7 +63,7 @@
 							<li class="text-center">Approx. 6.5 Conventional Studios</li>
 						</ul>
 					</div>
-					<div class="col-md-6">
+					<div class="col-lg-6">
 						<div id="floorplan-coliving" class="floorplan"></div>
 						<h3 class="text-center">Coliving Housing Approach</h3>
 						<ul class="list-unstyled">
@@ -73,8 +74,8 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6 image-block" style="background:url('img/private-unit-1.jpg')"></div>
-					<div class="col-md-6 image-block" style="background:url('img/private-unit-2.jpg')"></div>
+					<div class="col-md-6 private" style="background:url('img/private-unit-1.jpg')no-repeat;background-color:white;background-size:contain;"></div>
+					<div class="col-md-6 private" style="background:url('img/private-unit-2.jpg')no-repeat;background-color:white;background-size:contain;"></div>
 				</div>
 			</div>
 		</section>
@@ -82,7 +83,9 @@
 		<section id="alternative">
 			<div class="container">
 				<div class="row background-clr-2">
-					<h2 class="text-center section-title" data-toggle="collapse" data-target="#rental-alernative-details">A Rental Apartment Alternative &gt;</h2>
+					<h2 class="text-center section-title" data-toggle="collapse" data-target="#rental-alternative-details" id="rental-alternative-header">
+						A Rental Apartment Alternative <span class=" pull-right" id="rental-alternative-chevron">&gt;</span>
+					</h2>
 				</div>
 			</div>
 			{% include rental-alternative.html %}
@@ -98,7 +101,7 @@
 			</div>
 			<div class="container">
 				<div class="row">
-					<div id="neighborhood-map" class="col-md-6 image-block" style="background:url('img/map.jpg')"></div>
+					<div id="neighborhood-map" class="col-md-6"></div>
 					<div class="col-md-6 text-block background-clr-1" style="overflow:scroll;">
 						{% include neighborhood.html %}
 					</div>
@@ -134,11 +137,14 @@
 
 			<div class="container">
 				<div class="row background-clr-4">
-					<h2 class="text-center section-title" data-toggle="collapse" data-target="#more-process">More Process &gt;</h2>
+					<h2 class="text-center section-title" data-toggle="collapse" data-target="#more-process" id="more-process-header">
+					<!--	More Process <span class="glyphicon glyphicon-chevron-right pull-right" id="process-chevron"></span> -->
+						More Process <span class=" pull-right" id="process-chevron">&gt;</span>
+					</h2>
 				</div>
 			</div>
 			
-			<div class="container" id="more-process">
+			<div class="container collapse" id="more-process" >
 				<div class="row pad-me background-clr-0">
 					{% include public-process.html %}
 				</div>
@@ -163,13 +169,13 @@
 			</div>
 			<div class="container">
 				<div class="row background-clr-0">
-					<div class="col-md-6 bspecial" style="padding-top:20px;">
+					<div class="col-md-6 bspecial" >
 						{% include residents-intro.html %}
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 bspecial">
 						{% include news.html %}
 					</div>
-					<div class="col-md-12" id="resident-profiles">
+					<div class="col-md-12 " id="resident-profiles">
 						{% include profiles.html %}
 					</div>
 					
@@ -179,9 +185,8 @@
 
 		<section id="contact">
 			{% include contact.html %}
-		</section>
+ 		</section>
 
 		{% include modal.html %}
-
 	</body>
 </html>

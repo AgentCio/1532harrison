@@ -1,20 +1,24 @@
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 @media (max-width: @screen-phone) { /* "phone" */
-
-	#mission-statement{
+	#mission-statement p{
 		top:65px;
-		font-size:1.2em;
+		font-size:1.1em;
 	}
+
 }
 @media (max-width: @screen-sm-min) { /* "tablet" */
 	#logo {
 		background-size:contain;
 		width:210px;
+		background-position-y:50%;
 	}
-	#mission-statement{
+	#mission-statement p{
 		top:65px;
-		font-size:1.5em;
+		font-size:1.1em;
+	}
+	.rental-alternative-body{
+		padding-left:40px;
 	}
 }
 /* Small devices (tablets, 768px and up) */
@@ -22,34 +26,70 @@
 	#mission-statement {
 		top: 100px;
 		width: 700px;
-		left: 50%;
-		margin-left: -350px;
+		/*left: 50%;*/
+		/*margin-left: -350px;*/
 	}
+	#resident-profiles .top-border{
+		left:5.5%;
+		right:5.5%;
+	}
+
+	.rental-alternative-body{
+		padding-left:40px;
+	}
+
 
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
+	
+	.rental-alternative-body{
+		padding-left:40px;
+	}
+	
+	
+	#resident-profiles .top-border{
+		left:8%;
+		right:8%;
+	}
+
 	#nav-toggle {
 		display:none;
 	}
 
 	#primary-nav {
-
 		.collapse {
 			display: block!important;
 			height: auto!important;
 			padding-bottom: 0;
 			overflow: visible!important;
 		}
-
 		li {
 			width: 11%;
 		}
-
+		li.m_project			{width:10%;}
+		li.m_plaza				{width:7%;}
+		li.m_coliving			{width:14%;}
+		li.m_neighborhood	{width:18%;}
+		li.m_process			{width:10%;}
+		li.m_team					{width:5%;}
+		li.m_residents		{width:13%;}
+		li.m_contact			{width:17%;}
 	}/*end #primary-nav */
+	
+	#mission-statement {
+		top: 130px;
+	}
+	.facebook, .twitter{
+		padding-left:0px;
+	}
+	
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) {
-
+	#resident-profiles .top-border{
+		left:7%;
+		right:7%;
+	}
 }

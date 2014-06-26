@@ -5837,8 +5837,12 @@ li {
   margin-bottom: 40px;
   border-bottom: 2px solid;
 }
+.contact-element {
+  padding-top: 40px;
+  padding-left: 40px;
+}
 .text-block {
-  padding: 50px 40px 0px 40px;
+  padding: 40px 40px 0px 40px;
   height: 460px;
   overflow: scroll;
 }
@@ -5919,6 +5923,9 @@ li {
 #twitter-btn {
   background: url('../img/twitter-btn.svg') no-repeat;
 }
+.twitter {
+  padding-bottom: 40px;
+}
 #facebook-btn {
   background: url('../img/facebook-btn.svg') no-repeat;
 }
@@ -5933,6 +5940,7 @@ li {
   height: 50px;
   width: 388px;
   margin: auto;
+  background-position: 50%;
 }
 #primary-nav {
   background-color: #46525e;
@@ -6035,21 +6043,23 @@ li {
   font-size: 1.5em;
 }
 .scrollblock {
-  position: absolute;
+  /*position: absolute;*/
+  position: relative;
   top: 0!important;
   width: 100%;
   height: 100%;
 }
 .floorplan {
   height: 410px;
-  width: 555px;
   margin: 50px auto 30px auto;
 }
 #floorplan-conventional {
   background: url('../img/floorplan-conventional.png') no-repeat;
+  background-size: contain;
 }
 #floorplan-coliving {
   background: url('../img/floorplan-coliving-2.png') no-repeat;
+  background-size: contain;
 }
 #floorplan-comparison {
   background: url('../img/floorplan-coliving.png') no-repeat;
@@ -6154,8 +6164,8 @@ li {
 #resident-profiles .top-border {
   border-top: 2px solid #f7a700;
   position: absolute;
-  left: 2.5%;
-  right: 2.5%;
+  left: 8%;
+  right: 8%;
 }
 .profile {
   padding-bottom: 10px;
@@ -6164,13 +6174,30 @@ li {
   padding-top: 13px;
   padding-bottom: 13px;
 }
+#rental-alternative-chevron,
+#process-chevron {
+  padding-right: 10px;
+}
+#neighborhood-map {
+  background: url('../img/map.jpg');
+  height: 460px;
+  background-repeat: no-repeat;
+  background-position: center  center;
+  background-color: #ffffff;
+}
+.private {
+  background: url('../img/private-unit-1.jpg') no-repeat;
+  background-color: white;
+  background-size: contain;
+  min-height: 460px;
+}
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 @media (max-width: 480px) {
   /* "phone" */
-  #mission-statement {
+  #mission-statement p {
     top: 65px;
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 @media (max-width: 768px) {
@@ -6178,10 +6205,14 @@ li {
   #logo {
     background-size: contain;
     width: 210px;
+    background-position-y: 50%;
   }
-  #mission-statement {
+  #mission-statement p {
     top: 65px;
-    font-size: 1.5em;
+    font-size: 1.1em;
+  }
+  .rental-alternative-body {
+    padding-left: 40px;
   }
 }
 /* Small devices (tablets, 768px and up) */
@@ -6189,12 +6220,26 @@ li {
   #mission-statement {
     top: 100px;
     width: 700px;
-    left: 50%;
-    margin-left: -350px;
+    /*left: 50%;*/
+    /*margin-left: -350px;*/
+  }
+  #resident-profiles .top-border {
+    left: 5.5%;
+    right: 5.5%;
+  }
+  .rental-alternative-body {
+    padding-left: 40px;
   }
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .rental-alternative-body {
+    padding-left: 40px;
+  }
+  #resident-profiles .top-border {
+    left: 8%;
+    right: 8%;
+  }
   #nav-toggle {
     display: none;
   }
@@ -6207,6 +6252,43 @@ li {
   #primary-nav li {
     width: 11%;
   }
+  #primary-nav li.m_project {
+    width: 10%;
+  }
+  #primary-nav li.m_plaza {
+    width: 7%;
+  }
+  #primary-nav li.m_coliving {
+    width: 14%;
+  }
+  #primary-nav li.m_neighborhood {
+    width: 18%;
+  }
+  #primary-nav li.m_process {
+    width: 10%;
+  }
+  #primary-nav li.m_team {
+    width: 5%;
+  }
+  #primary-nav li.m_residents {
+    width: 13%;
+  }
+  #primary-nav li.m_contact {
+    width: 17%;
+  }
   /*end #primary-nav */
+  #mission-statement {
+    top: 130px;
+  }
+  .facebook,
+  .twitter {
+    padding-left: 0px;
+  }
 }
 /* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  #resident-profiles .top-border {
+    left: 7%;
+    right: 7%;
+  }
+}

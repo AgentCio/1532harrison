@@ -23,9 +23,9 @@ $(document).ready(function(){
 		}else{
 			missionPosition = 65;
 		}
-		console.info("missionPosition: " + missionPosition);
+		//console.info("missionPosition: " + missionPosition);
 		$('#introduction .full-width-image').css('height', fullWidthHeight);
-		$('#mission-statement').css('top', missionPosition);
+		//$('#mission-statement').css('top', missionPosition);
 	}
 
 	sizeFullScreenImages();
@@ -46,6 +46,22 @@ $(document).ready(function(){
 			}
 		});
 	});
+
+	$("#rental-alternative-details").on("show.bs.collapse", function () {
+		$("#rental-alternative-chevron").css({"-webkit-transition":"all 0.5s ease","transform":"rotate(90deg)","-webkit-transform":"rotate(90deg)"});
+	});
+	$('#rental-alternative-details').on('hide.bs.collapse', function () {
+		$("#rental-alternative-chevron").css({"-webkit-transition":"all 0.5s ease","transform":"rotate(0deg)","-webkit-transform":"rotate(0deg)"});
+	});
+
+
+	$("#more-process").on("show.bs.collapse", function () {
+		$("#process-chevron").css({"-webkit-transition":"all 0.5s ease","transform":"rotate(90deg)","-webkit-transform":"rotate(90deg)"});
+	});
+	$('#more-process').on('hide.bs.collapse', function () {
+		$("#process-chevron").css({"-webkit-transition":"all 0.5s ease","transform":"rotate(0deg)","-webkit-transform":"rotate(0deg)"});
+	});
+
 
 	// Fetch Tweets and Add to Page
 	function ajaxLoadContent() {
