@@ -6056,13 +6056,17 @@ li {
 #floorplan-conventional {
   background: url('../img/floorplan-conventional.png') no-repeat;
   background-size: contain;
+  background-position: 50% 50%;
 }
 #floorplan-coliving {
   background: url('../img/floorplan-coliving-2.png') no-repeat;
   background-size: contain;
+  background-position: 50% 50%;
 }
 #floorplan-comparison {
   background: url('../img/floorplan-coliving.png') no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
 }
 #community-involvement .primary-button {
   margin-top: 50px;
@@ -6186,18 +6190,31 @@ li {
   background-color: #ffffff;
 }
 .private {
-  background: url('../img/private-unit-1.jpg') no-repeat;
+  background-position: 50% 50%;
   background-color: white;
-  background-size: contain;
   min-height: 460px;
+}
+.private-1 {
+  background: url('../img/private-unit-1.jpg') no-repeat;
+  background-size: 100%;
+}
+.private-2 {
+  background: url('../img/private-unit-2.jpg') no-repeat;
+  background-size: 100%;
+}
+.clean li {
+  list-style-type: none;
 }
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 @media (max-width: 480px) {
   /* "phone" */
   #mission-statement p {
-    top: 65px;
-    font-size: 1.1em;
+    top: 55px;
+    font-size: 1.0em;
+  }
+  .private {
+    min-height: 230px;
   }
 }
 @media (max-width: 768px) {
@@ -6208,8 +6225,8 @@ li {
     background-position-y: 50%;
   }
   #mission-statement p {
-    top: 65px;
-    font-size: 1.1em;
+    top: 55px;
+    font-size: 1.0em;
   }
   .rental-alternative-body {
     padding-left: 40px;
@@ -6219,7 +6236,7 @@ li {
 @media (min-width: 768px) {
   #mission-statement {
     top: 100px;
-    width: 700px;
+    /*width: 700px;*/
     /*left: 50%;*/
     /*margin-left: -350px;*/
   }
@@ -6233,6 +6250,9 @@ li {
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  #primary-nav li {
+    text-align: right;
+  }
   .rental-alternative-body {
     padding-left: 40px;
   }
@@ -6279,6 +6299,9 @@ li {
   /*end #primary-nav */
   #mission-statement {
     top: 130px;
+  }
+  #mission-statement p {
+    font-size: 1.6em;
   }
   .facebook,
   .twitter {

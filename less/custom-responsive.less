@@ -2,10 +2,12 @@
 /* No media query since this is the default in Bootstrap */
 @media (max-width: @screen-phone) { /* "phone" */
 	#mission-statement p{
-		top:65px;
-		font-size:1.1em;
+		top:55px;
+		font-size:1.0em;
 	}
-
+	.private{
+ 		 min-height:230px;
+	} 
 }
 @media (max-width: @screen-sm-min) { /* "tablet" */
 	#logo {
@@ -14,8 +16,8 @@
 		background-position-y:50%;
 	}
 	#mission-statement p{
-		top:65px;
-		font-size:1.1em;
+		top:55px;
+		font-size:1.0em;
 	}
 	.rental-alternative-body{
 		padding-left:40px;
@@ -25,7 +27,7 @@
 @media (min-width: @screen-sm-min) {
 	#mission-statement {
 		top: 100px;
-		width: 700px;
+		/*width: 700px;*/
 		/*left: 50%;*/
 		/*margin-left: -350px;*/
 	}
@@ -43,7 +45,12 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
-	
+
+#primary-nav{                          
+        li{
+                text-align:right;
+        }      
+} 	
 	.rental-alternative-body{
 		padding-left:40px;
 	}
@@ -80,6 +87,9 @@
 	
 	#mission-statement {
 		top: 130px;
+		p{
+			font-size:1.6em;
+		}
 	}
 	.facebook, .twitter{
 		padding-left:0px;

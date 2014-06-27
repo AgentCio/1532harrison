@@ -1,2 +1,38 @@
-Not Found
+---
+title: 1532 Harrison | Not Found
+---
 
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<title>{{ page.title }}</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		{% include scripts.html %}
+	</head>
+
+	<body>
+		{% include faq-header.html %}
+
+		<section>
+			<div class="container">
+				<div class="row" style="padding-top:20%">
+					<div class="col-md-12 background-clr-2">
+						<h2 class="text-center section-title">
+							Sorry, that page wasn't found.
+						</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			{% include contact.html %}
+		</section>
+
+		{% include modal.html %}
+
+	</body>
+</html>

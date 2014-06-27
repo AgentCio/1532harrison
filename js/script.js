@@ -3,12 +3,17 @@ $(document).ready(function(){
 	// var twitterURL		= 'http://api.twitter.com/1/statuses/user_timeline.json?callback=?&screen_name=1532harrison&count=100';
 
 	var scrollorama = $.scrollorama({
-        blocks:'.scrollblock'
-    });
+		blocks:'.scrollblock'
+	});
 
 	if($('.scrollblock').length){
-		scrollorama.animate('.transparent-background',{ duration: 160, property:'opacity', start:1,end:0});
-		scrollorama.animate('#mission-statement',{ duration: 160, property:'opacity', start:1,end:0});
+		if (Modernizr.touch && Modernizr.mq('only screen and (max-width: 640px)')){
+//			alert("This is a touch device...");
+		}else{
+//			scrollorama.animate('.transparent-background',{ duration: 160, property:'opacity', start:1,end:0});
+//			scrollorama.animate('#mission-statement',{ duration: 160, property:'opacity', start:1,end:0});
+//			alert("This is NOT a touch device...");
+		}
 	}
 
 	function sizeFullScreenImages(){
@@ -47,19 +52,22 @@ $(document).ready(function(){
 		});
 	});
 
+var chevronopen = {"-webkit-transition":"all 0.5s ease","transition":"all 0.5s ease","transform":"rotate(90deg)","-webkit-transform":"rotate(90deg)"};
+var chevronclose= {"-webkit-transition":"all 0.5s ease","transition":"all 0.5s ease","transform":"rotate(0deg)","-webkit-transform":"rotate(0deg)"};
+
 	$("#rental-alternative-details").on("show.bs.collapse", function () {
-		$("#rental-alternative-chevron").css({"-webkit-transition":"all 0.5s ease","transform":"rotate(90deg)","-webkit-transform":"rotate(90deg)"});
+		$("#rental-alternative-chevron").css(chevronopen);
 	});
 	$('#rental-alternative-details').on('hide.bs.collapse', function () {
-		$("#rental-alternative-chevron").css({"-webkit-transition":"all 0.5s ease","transform":"rotate(0deg)","-webkit-transform":"rotate(0deg)"});
+		$("#rental-alternative-chevron").css(chevronclose);
 	});
 
 
 	$("#more-process").on("show.bs.collapse", function () {
-		$("#process-chevron").css({"-webkit-transition":"all 0.5s ease","transform":"rotate(90deg)","-webkit-transform":"rotate(90deg)"});
+		$("#process-chevron").css(chevronopen);
 	});
 	$('#more-process').on('hide.bs.collapse', function () {
-		$("#process-chevron").css({"-webkit-transition":"all 0.5s ease","transform":"rotate(0deg)","-webkit-transform":"rotate(0deg)"});
+		$("#process-chevron").css(chevronclose);
 	});
 
 
