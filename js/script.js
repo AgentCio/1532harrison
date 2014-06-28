@@ -2,19 +2,19 @@ $(document).ready(function(){
 	var headerHeight 	= $('#site-header').height();
 	// var twitterURL		= 'http://api.twitter.com/1/statuses/user_timeline.json?callback=?&screen_name=1532harrison&count=100';
 
-	var scrollorama = $.scrollorama({
-		blocks:'.scrollblock'
-	});
+//	var scrollorama = $.scrollorama({
+//		blocks:'.scrollblock'
+//	});
 
-	if($('.scrollblock').length){
-		if (Modernizr.touch && Modernizr.mq('only screen and (max-width: 640px)')){
+//	if($('.scrollblock').length){
+//		if (Modernizr.touch && Modernizr.mq('only screen and (max-width: 640px)')){
 //			alert("This is a touch device...");
-		}else{
+//		}else{
 //			scrollorama.animate('.transparent-background',{ duration: 160, property:'opacity', start:1,end:0});
 //			scrollorama.animate('#mission-statement',{ duration: 160, property:'opacity', start:1,end:0});
 //			alert("This is NOT a touch device...");
-		}
-	}
+//		}
+//	}
 
 	function sizeFullScreenImages(){
 		var winHeight 		= $(window).height(),
