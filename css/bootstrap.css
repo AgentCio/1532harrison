@@ -6205,6 +6205,13 @@ li {
 .clean li {
   list-style-type: none;
 }
+.drag-swipe {
+  padding-top: 40px;
+  color: #f7a700;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 @media (max-width: 480px) {
@@ -6215,6 +6222,26 @@ li {
   }
   .private {
     min-height: 230px;
+  }
+  #team-slideshow .full-width-image a {
+    background-position: 50% 50%;
+  }
+  .floorplan {
+    margin: 0 auto 0 auto;
+  }
+  .private-1,
+  .private-2 {
+    background-size: contain;
+    background-position: 50% 50%;
+  }
+  #neighborhood-image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 158px;
+    background-color: #ffffff;
+  }
+  #neighborhood-map {
+    background-size: contain;
   }
 }
 @media (max-width: 768px) {
@@ -6300,8 +6327,12 @@ li {
   #mission-statement {
     top: 130px;
   }
-  #mission-statement p {
-    font-size: 1.6em;
+  #mission-statement .mission-text {
+    margin-left: 8.33333333%;
+    width: 83.3333333%;
+  }
+  #mission-statement .mission-text p {
+    font-size: 1.4em;
   }
   .facebook,
   .twitter {
@@ -6310,6 +6341,9 @@ li {
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  #mission-statement .mission-text p {
+    font-size: 1.6em;
+  }
   #resident-profiles .top-border {
     left: 7%;
     right: 7%;

@@ -6,9 +6,31 @@
 		font-size:1.0em;
 	}
 	.private{
- 		 min-height:230px;
-	} 
+		min-height:230px;
+	}
+	#team-slideshow .full-width-image a{
+		background-position: 50% 50%;
+	}
+	.floorplan{
+		margin: 0 auto 0 auto;
+	}
+	.private-1, .private-2{
+		background-size: contain;
+		background-position:50% 50%;
+	}
+	#neighborhood-image{
+		background-size:contain;
+		background-repeat:no-repeat;
+		min-height:186px;
+		background-color:@white;
+	}
+	#neighborhood-map{
+		background-size:contain;
+	}
+
 }
+
+
 @media (max-width: @screen-sm-min) { /* "tablet" */
 	#logo {
 		background-size:contain;
@@ -46,15 +68,17 @@
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
 
-#primary-nav{                          
-        li{
-                text-align:right;
-        }      
-} 	
+
+
+	#primary-nav{
+		li{
+			text-align:right;
+		}
+	}
+	
 	.rental-alternative-body{
 		padding-left:40px;
 	}
-	
 	
 	#resident-profiles .top-border{
 		left:8%;
@@ -87,8 +111,12 @@
 	
 	#mission-statement {
 		top: 130px;
-		p{
-			font-size:1.6em;
+		.mission-text{
+			margin-left:8.33333333%; 
+			width:83.3333333%;
+			p{
+				font-size:1.4em;
+			}
 		}
 	}
 	.facebook, .twitter{
@@ -98,6 +126,13 @@
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) {
+	#mission-statement {
+		.mission-text{
+			p{
+				font-size:1.6em;
+			}
+		}
+	}
 	#resident-profiles .top-border{
 		left:7%;
 		right:7%;

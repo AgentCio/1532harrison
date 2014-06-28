@@ -35,7 +35,7 @@ title: 1532 Harrison
 		<section id="the-project">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 image-block" style="background:url('img/block-rendering.jpg')"></div>
+					<div class="col-md-6 image-block" style="background:url('img/block-rendering.jpg');background-position:50% 50%;"></div>
 					<div class="col-md-6 text-block background-clr-1">
 						{% include purpose.html %}
 					</div>
@@ -51,7 +51,7 @@ title: 1532 Harrison
 					<div class="col-md-6 text-block background-clr-2">
 						{% include rethinking-home.html %}
 					</div>
-					<div class="col-md-6 image-block" style="background:url('img/rethinking-photo.jpg')"></div>
+					<div class="col-md-6 image-block" style="background:url('img/rethinking-photo.jpg');background-position:50% 50%;"></div>
 				</div>
 				
 				<div class="row background-clr-1 pad-me">
@@ -84,7 +84,7 @@ title: 1532 Harrison
 			<div class="container">
 				<div class="row background-clr-2">
 					<h2 class="text-center section-title"><span data-toggle="collapse" data-target="#rental-alternative-details" id="rental-alternative-header">
-						A Rental Apartment Alternative <span class=" pull-right" id="rental-alternative-chevron">&gt;</span></span>
+						A Rental Apartment Alternative <!-- <span class=" pull-right" id="rental-alternative-chevron">&gt;</span></span> -->
 					</h2>
 				</div>
 			</div>
@@ -94,7 +94,7 @@ title: 1532 Harrison
 		<section id="neighborhood">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 image-block">
+					<div class="col-md-12 ">
 						<div id="neighborhood-image"></div>
 					</div>
 				</div>
@@ -138,13 +138,12 @@ title: 1532 Harrison
 			<div class="container">
 				<div class="row background-clr-4">
 					<h2 class="text-center section-title" data-toggle="collapse" data-target="#more-process" id="more-process-header">
-					<!--	More Process <span class="glyphicon glyphicon-chevron-right pull-right" id="process-chevron"></span> -->
-						More Process <span class=" pull-right" id="process-chevron">&gt;</span>
+						More Process <!-- <span class=" pull-right" id="process-chevron">&gt;</span> -->
 					</h2>
 				</div>
 			</div>
 			
-			<div class="container collapse" id="more-process" >
+			<div class="container collapse.in" id="more-process" >
 				<div class="row pad-me background-clr-0">
 					{% include public-process.html %}
 				</div>
