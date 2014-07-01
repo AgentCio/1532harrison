@@ -32,11 +32,27 @@ $(document).ready(function(){
 		$('#introduction .full-width-image').css('height', fullWidthHeight);
 		//$('#mission-statement').css('top', missionPosition);
 	}
+	
+	function moreInfo() {
+		if($(window).width() < 990){
+			console.info("width is < 990. ["+$(window).width()+ "]");
+			$("#process-chevron, #rental-alternative-chevron").hide();
+			$("#rental-alternative-details, #more-process").show();	
+		}else{
+			console.info("width is > 990.");
+			$("#process-chevron, #rental-alternative-chevron").show();
+			$("#rental-alternative-details, #more-process").hide();	
+
+		}
+	}
+	
 
 	sizeFullScreenImages();
+	// moreInfo();
 
 	$(window).resize(function() {
 		sizeFullScreenImages();
+		// moreInfo();
 	});
 	
 	$('a.scrollTo').click(function(event) {
