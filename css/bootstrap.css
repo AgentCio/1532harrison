@@ -1,3 +1,5 @@
+/*darken(@orange,10%);*/
+/* 7/1/14, BV darkened orange bg was used for a while before the 100% width layout change. */
 /*! normalize.css v3.0.0 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -269,7 +271,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
-  background-color: #c48500;
+  background-color: #738597;
 }
 input,
 button,
@@ -314,7 +316,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857143;
-  background-color: #c48500;
+  background-color: #738597;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1430,7 +1432,7 @@ th {
   border-top: 2px solid #dddddd;
 }
 .table .table {
-  background-color: #c48500;
+  background-color: #738597;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -1678,7 +1680,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #46525e;
+  color: #f8f8f8;
 }
 .form-control {
   display: block;
@@ -1687,7 +1689,7 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #46525e;
+  color: #f8f8f8;
   background-color: #ffffff;
   background-image: none;
   border: 1px solid #cccccc;
@@ -3367,7 +3369,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   font-size: 14px;
   font-weight: normal;
   line-height: 1;
-  color: #46525e;
+  color: #f8f8f8;
   text-align: center;
   background-color: #eeeeee;
   border: 1px solid #cccccc;
@@ -3500,8 +3502,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-  color: #46525e;
-  background-color: #c48500;
+  color: #f8f8f8;
+  background-color: #738597;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -3547,7 +3549,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #c48500;
+    border-bottom-color: #738597;
   }
 }
 .nav-pills > li {
@@ -3615,7 +3617,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #c48500;
+    border-bottom-color: #738597;
   }
 }
 .tab-content > .tab-pane {
@@ -4394,7 +4396,7 @@ a.list-group-item.active > .badge,
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857143;
-  background-color: #c48500;
+  background-color: #738597;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -5780,37 +5782,41 @@ button.close {
 }
 p,
 li {
-  font-size: 1.3em;
+  font-size: 1.4em;
 }
 .background-clr-0 {
   background-color: #ffffff;
+  color: #738597;
+}
+.background-clr-0 a {
+  color: #738597;
 }
 .background-clr-1 {
-  background-color: #46525e;
-  color: #f7a700;
+  background-color: #f8f8f8;
+  color: #738597;
 }
 .background-clr-1 a {
-  color: #f7a700;
+  color: #738597;
 }
 .background-clr-1 h2,
 .background-clr-1 h3 {
-  font-weight: 400;
+  font-weight: 300;
 }
 .background-clr-2 {
-  background-color: #f7a700;
+  background-color: #738597;
   color: #ffffff;
 }
 .background-clr-2 a {
   color: #ffffff;
 }
 .background-clr-3 {
-  color: #46525e;
+  color: #f8f8f8;
 }
 .background-clr-3 a {
-  color: #46525e;
+  color: #f8f8f8;
 }
 .background-clr-4 {
-  background-color: #303941;
+  background-color: #dfdfdf;
   color: #ffffff;
 }
 .background-clr-4 a {
@@ -5819,6 +5825,20 @@ li {
 .background-clr-4 h2,
 .background-clr-4 h3 {
   font-weight: 400;
+}
+.background-clr-5 {
+  background-color: #f7a700;
+  color: #ffffff;
+}
+.background-clr-5 a {
+  color: #ffffff;
+}
+.background-clr-6 {
+  background-color: #46525e;
+  color: #ffffff;
+}
+.background-clr-6 a {
+  color: #ffffff;
 }
 .text-white {
   color: white;
@@ -5844,9 +5864,18 @@ li {
 .text-block {
   padding: 40px 40px 0px 40px;
   height: 460px;
-  overflow: scroll;
+  overflow: auto;
 }
 .text-block h2 {
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid;
+}
+.new-text-block {
+  padding: 40px 40px 0px 40px;
+  overflow: auto;
+}
+.new-text-block h2 {
   padding-bottom: 40px;
   margin-bottom: 40px;
   border-bottom: 2px solid;
@@ -5883,15 +5912,15 @@ li {
 .primary-button {
   text-transform: uppercase;
   font-weight: 600;
-  color: #f7a700;
-  background-color: #46525e;
+  color: #738597;
+  background-color: #f8f8f8;
   border: 2px solid;
   width: 200px;
   display: block;
   text-align: center;
   padding: 5px;
   margin-bottom: 20px;
-  box-shadow: -6px -6px 0px 0px #f7a700;
+  box-shadow: -6px -6px 0px 0px #738597;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -5899,17 +5928,17 @@ li {
 }
 .primary-button:hover {
   text-decoration: none;
-  color: #f7a700;
-  box-shadow: 0px 0px 0px 0px #f7a700;
+  color: #738597;
+  box-shadow: 0px 0px 0px 0px #738597;
 }
 .square-btn {
   width: 150px;
   height: 150px;
   border: 2px solid;
-  color: #f7a700;
+  color: #738597;
   display: block;
   margin-bottom: 12px;
-  box-shadow: -6px -6px 0px 0px #f7a700;
+  box-shadow: -6px -6px 0px 0px #738597;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -5917,8 +5946,8 @@ li {
 }
 .square-btn:hover {
   text-decoration: none;
-  color: #f7a700;
-  box-shadow: 0px 0px 0px 0px #f7a700;
+  color: #738597;
+  box-shadow: 0px 0px 0px 0px #738597;
 }
 #twitter-btn {
   background: url('../img/twitter-btn.svg') no-repeat;
@@ -5961,7 +5990,7 @@ li {
 }
 #primary-nav li a:hover {
   text-decoration: none;
-  color: #f7a700;
+  color: #738597;
 }
 #nav-toggle {
   width: 64px;
@@ -6012,9 +6041,9 @@ li {
   top: 40%;
   font-size: 4em;
   z-index: 1000;
-  color: #111111;
+  color: #738597;
   position: absolute;
-  cursor: pointer;
+  cursor: none;
 }
 .slideshow-container .flip-nav-right {
   right: 25px;
@@ -6038,9 +6067,15 @@ li {
 }
 #mission-statement {
   position: absolute;
-  top: 100px;
+  /*top:100px;*/
+  top: -680px;
+  left: 0px;
   width: 100%;
   font-size: 1.5em;
+}
+#mission-statement .mission-text p {
+  font-weight: 200;
+  margin-bottom: 18px;
 }
 .scrollblock {
   /*position: absolute;*/
@@ -6140,10 +6175,10 @@ li {
   transition: color 0.2s ease-in-out;
 }
 #flipsnap-controls li:hover {
-  color: #ffffff;
+  color: #e5a600;
 }
 #flipsnap-controls li.currentToggle {
-  color: #ffffff;
+  color: #e5a600;
 }
 .no-top {
   margin-top: 0;
@@ -6166,7 +6201,7 @@ li {
   margin-top: 20px;
 }
 #resident-profiles .top-border {
-  border-top: 2px solid #f7a700;
+  border-top: 2px solid #738597;
   position: absolute;
   left: 8%;
   right: 8%;
@@ -6193,6 +6228,8 @@ li {
   background-position: 50% 50%;
   background-color: white;
   min-height: 460px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .private-1 {
   background: url('../img/private-unit-1.jpg') no-repeat;
@@ -6206,18 +6243,36 @@ li {
   list-style-type: none;
 }
 .drag-swipe {
-  padding-top: 40px;
-  color: #f7a700;
-  width: 25%;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 0px;
+  font-size: 1.2em;
+  color: #738597;
+  /*width:25%;
+	margin-left:auto;
+	margin-right:auto;*/
+}
+p {
+  font-weight: 300;
+}
+.credits {
+  margin-bottom: 20px;
+  color: #cccccc;
+}
+.credits a {
+  color: #cccccc;
+}
+h2,
+.h2,
+h3,
+.h3 {
+  font-weight: 300;
 }
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 @media (max-width: 480px) {
   /* "phone" */
   #mission-statement p {
-    top: 55px;
+    /*top:55px;*/
+    top: -680px;
     font-size: 1.0em;
   }
   .private {
@@ -6243,6 +6298,9 @@ li {
   #neighborhood-map {
     background-size: contain;
   }
+  .text-block {
+    height: auto;
+  }
 }
 @media (max-width: 768px) {
   /* "tablet" */
@@ -6258,11 +6316,16 @@ li {
   .rental-alternative-body {
     padding-left: 40px;
   }
+  .text-block {
+    height: auto;
+  }
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   #mission-statement {
-    top: 100px;
+    /*top: 100px;*/
+    top: -650px;
+    left: 0px;
     /*width: 700px;*/
     /*left: 50%;*/
     /*margin-left: -350px;*/
@@ -6278,7 +6341,8 @@ li {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   #primary-nav li {
-    text-align: right;
+    text-align: center;
+    padding-right: 0;
   }
   .rental-alternative-body {
     padding-left: 40px;
@@ -6297,35 +6361,37 @@ li {
     overflow: visible!important;
   }
   #primary-nav li {
-    width: 11%;
+    /*width: 11%;*/
   }
   #primary-nav li.m_project {
-    width: 10%;
+    width: 11.2%;
   }
   #primary-nav li.m_plaza {
-    width: 7%;
+    width: 8.32%;
   }
   #primary-nav li.m_coliving {
-    width: 14%;
+    width: 12.22%;
   }
   #primary-nav li.m_neighborhood {
-    width: 18%;
+    width: 16.66%;
   }
   #primary-nav li.m_process {
-    width: 10%;
+    width: 11.59%;
   }
   #primary-nav li.m_team {
-    width: 5%;
+    width: 8.87%;
   }
   #primary-nav li.m_residents {
-    width: 13%;
+    width: 12.55%;
   }
   #primary-nav li.m_contact {
-    width: 17%;
+    width: 15.67%;
   }
   /*end #primary-nav */
   #mission-statement {
-    top: 130px;
+    /*top: 130px;*/
+    top: -650px;
+    left: 0px;
   }
   #mission-statement .mission-text {
     margin-left: 8.33333333%;
@@ -6338,14 +6404,25 @@ li {
   .twitter {
     padding-left: 0px;
   }
+  #nav-space {
+    width: 940px;
+    margin: 0 auto;
+  }
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  #mission-statement {
+    top: -680px;
+  }
   #mission-statement .mission-text p {
     font-size: 1.6em;
   }
   #resident-profiles .top-border {
     left: 7%;
     right: 7%;
+  }
+  #nav-space {
+    width: 1104px;
+    margin: 0 auto;
   }
 }

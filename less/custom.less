@@ -2,10 +2,17 @@
 
 @white: #ffffff;
 @black: #111111;
-@gray: #46525e;
-@peach: #f7a700;
 
-@orange: #f7a700;
+@originalgray: #46525e;
+@originalpeach: #f7a700;
+@originalorange: #f7a700;
+
+@gray: #f8f8f8;
+@peach: #738597;
+@orange: @peach;
+@bodytext: @peach;
+@arrowcolor: #738597;
+@teamlinkcolor: #E5A600;
 
 @regularWeight: 400;
 @mediumWeight: 600;
@@ -48,11 +55,16 @@
 //}
 
 p, li{
-	font-size: 1.3em;
+	font-size: 1.4em;
 }
 
 .background-clr-0{
         background-color: @white;
+	color: @bodytext;
+	a{
+		color:@bodytext;
+	}
+	
 }
 
 .background-clr-1{
@@ -62,7 +74,7 @@ p, li{
 		color:@peach;
 	}
 	h2, h3{
-		font-weight:400;
+		font-weight:300;
 	}
 }
 
@@ -90,6 +102,20 @@ p, li{
 	h2, h3{
 		font-weight:400;
 	}
+}
+.background-clr-5{
+        background-color:@originalorange;
+        color:@white;
+        a{
+                color:@white;
+        }      
+} 
+.background-clr-6{
+        background-color:@originalgray;
+        color:@white;
+        a{
+                color:@white;
+        }
 }
 
 .text-white{
@@ -121,13 +147,23 @@ p, li{
 .text-block{
 	padding:40px 40px 0px 40px;
 	height:460px;
-	overflow:scroll;
+	overflow:auto;
 	h2{
 		padding-bottom:40px;
 		margin-bottom:40px;
 		border-bottom:2px solid;
 	}
 }
+
+.new-text-block{
+        padding:40px 40px 0px 40px;
+        overflow:auto;
+        h2{
+                padding-bottom:40px;   
+                margin-bottom:40px;
+                border-bottom:2px solid;
+        }
+}  
 
 .image-block{
 	height:460px;
@@ -219,7 +255,7 @@ p, li{
 }
 
 #primary-nav{
-	background-color:@gray;
+	background-color:@originalgray;
 	width:100%;
 	li{
 		text-align:center;
@@ -300,9 +336,9 @@ p, li{
 		top: 40%;
 		font-size: 4em;
 		z-index:1000;
-		color: @black;
+		color: @arrowcolor;
 		position: absolute;
-		cursor:pointer;
+		cursor:none;
 	}
 	
 	.flip-nav-right{	
@@ -336,9 +372,15 @@ p, li{
 
 #mission-statement{
 	position:absolute;
-	top:100px;
+	/*top:100px;*/
+	top:-680px;
+	left:0px;
 	width:100%;
 	font-size:1.5em;
+	.mission-text p{
+	        font-weight:200; 
+		margin-bottom:18px;
+	}
 }
 
 .scrollblock{
@@ -471,10 +513,10 @@ p, li{
 		padding:2px 0;
 		.transition(color, .2s);
 		&:hover{
-			color:@white;
+			color:@teamlinkcolor;
 		}
 		&.currentToggle{
-			color:@white;
+			color:@teamlinkcolor;
 		}
 	}
 }
@@ -535,6 +577,8 @@ p, li{
 	background-position:50% 50%;
 	background-color:white;
 	min-height:460px;
+	margin-top:20px;
+	margin-bottom:20px;
 }
 .private-1{
         background:url('../img/private-unit-1.jpg') no-repeat;
@@ -548,14 +592,28 @@ p, li{
 	list-style-type:none;
 }
 .drag-swipe{
-	padding-top:40px;
-	color:@orange;
-	width:25%;
+	padding-top:0px;
+	font-size:1.2em;
+	color:@bodytext;
+	/*width:25%;
 	margin-left:auto;
-	margin-right:auto;
+	margin-right:auto;*/
 }
 
+p{
+	font-weight:300;
+}
 
+@lightgray: #ccc;
+.credits{
+	margin-bottom:20px;
+	color:@lightgray;
+	a{
+		color:@lightgray;
+	}
+}
 
-
-
+h2, .h2,
+h3, .h3 {
+	font-weight: 300;
+}

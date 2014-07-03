@@ -18,25 +18,26 @@ title: 1532 Harrison
 
 	<body>
 		{% include header.html %}
-
+		<div>
+			<div class="masthead-image">
+                		<div class="scrollblock" style="">
+			                <div class="transparent-background"></div>
+				</div>
+			</div>
+		</div>
 		<section id="introduction">
 			<div class="container">
 				<div class="row">
-					<div class="masthead-image">
-						<div class="scrollblock" style="position:relative !important;">
-							<div class="transparent-background"></div>
-								{% include mission-statement.html %}
-						</div>
-					</div>
+					{% include mission-statement.html %}
 				</div>
 			</div>
 		</section>
 
-		<section id="the-project">
+		<section id="the-project"  class="background-clr-1">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 image-block" style="background:url('img/block-rendering.jpg');background-position:50% 50%;"> </div>
-					<div class="col-md-6 text-block background-clr-1">
+					<div class="col-md-6 new-text-block ">
 						{% include purpose.html %}
 					</div>
 				</div>
@@ -45,7 +46,7 @@ title: 1532 Harrison
 
 		{% include building-drawings.html %}
 
-		<section id="coliving-overview">
+		<section id="coliving-overview" class="background-clr-2">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 text-block background-clr-2">
@@ -53,7 +54,10 @@ title: 1532 Harrison
 					</div>
 					<div class="col-md-6 image-block" style="background:url('img/rethinking-photo.jpg');background-position:50% 50%;"></div>
 				</div>
-				
+			</div>
+		</section>
+		<section class="background-clr-1">		
+			<div class="container">
 				<div class="row background-clr-1 pad-me">
 					<div class="col-lg-6">
 						<div id="floorplan-conventional" class="floorplan"></div>
@@ -65,7 +69,7 @@ title: 1532 Harrison
 					</div>
 					<div class="col-lg-6">
 						<div id="floorplan-coliving" class="floorplan"></div>
-						<h3 class="text-center">Coliving Housing Approach</h3>
+						<h3 class="text-center">CoLiving Housing Approach</h3>
 						<ul class="list-unstyled">
 							<li class="text-center">Shared Living Space (living, dining, cooking &amp; laundry)</li>
 							<li class="text-center">9 Private Suites (each has its own bathroom, kitchenette &amp; private balcony)</li>
@@ -73,6 +77,10 @@ title: 1532 Harrison
 						
 					</div>
 				</div>
+			</div>
+		</section>
+		<section class="background-clr-0">
+			<div class="container">
 				<div class="row background-clr-0">
 					<div class="col-md-6 private private-1"></div>
 					<div class="col-md-6 private private-2"></div>
@@ -80,23 +88,27 @@ title: 1532 Harrison
 			</div>
 		</section>
 
-		<section id="alternative">
+		<section id="alternative" class="background-clr-2">
 			<div class="container">
 				<div class="row background-clr-2">
 					<h2 class="text-center section-title"><span data-toggle="collapse" data-target="#rental-alternative-details" id="rental-alternative-header">
-						A Rental Apartment Alternative <!-- <span class=" pull-right" id="rental-alternative-chevron">&gt;</span></span> -->
+						A Rental Apartment Alternative &nbsp;&nbsp;<span class=" " id="rental-alternative-chevron" style="font-size:0.6em;font-weight:100;">&gt; more</span></span> 
 					</h2>
 				</div>
 			</div>
+		</section>
+		<section class="background-clr-0">
+
 			{% include rental-alternative.html %}
 		</section>
 
-		<section id="neighborhood">
+		<section id="neighborhood" class="background-clr-1">
+			<img src="/img/soma.jpg" alt="Soma neighborhood image" style="height:auto; width:100%">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12 ">
-						<div id="neighborhood-imageXXX">
-							<img src="/img/soma.jpg" style="height:auto; width:100%">
+					<div class="col-md-12">
+						<div id="neighborhood-imageYYY">
+							<!-- <img src="/img/soma.jpg" alt="Soma neighborhood image" style="height:auto; width:100%"> -->
 						</div>
 
 					</div>
@@ -105,7 +117,7 @@ title: 1532 Harrison
 			<div class="container">
 				<div class="row">
 					<div id="neighborhood-map" class="col-md-6"></div>
-					<div class="col-md-6 text-block background-clr-1" style="overflow:scroll;">
+					<div class="col-md-6 text-block background-clr-1" style="overflow:auto;">
 						{% include neighborhood.html %}
 					</div>
 				</div>
@@ -114,22 +126,27 @@ title: 1532 Harrison
 		</section>
 
 
-		<section id="plaza">
+		<section id="plaza" class="background-clr-5">
 			<div class="container">
-				<div class="row background-clr-2">
+				<div class="row background-clr-5">
 					<h2 class="text-center section-title">Eagle Plaza</h2>
 				</div>
 			</div>
+		</section>
+		<section class="background-clr-1">
 			{% include plaza.html %}
 		</section>
 
 
-		<section id="community-involvement">
+		<section id="community-involvement"class="background-clr-2">
 			<div class="container">
 				<div class="row background-clr-2">
 					<h2 class="text-center section-title">Process</h2>
 				</div>
 			</div>
+		</section>
+		<section class="background-clr-1">
+			<div class="container">
 			<div id="process-details">
 				<div class="container background-clr-1">
 					<div class="row pad-me">
@@ -137,25 +154,23 @@ title: 1532 Harrison
 					</div>
 				</div>
 			</div>
-
+			</div>
+		</section>
+		<section class="background-clr-6">
 			<div class="container">
-				<div class="row background-clr-4">
+				<div class="row background-clr-6">
 					<h2 class="text-center section-title" data-toggle="collapse" data-target="#more-process" id="more-process-header">
-						More Process <!-- <span class=" pull-right" id="process-chevron">&gt;</span> -->
+						Additional Process &nbsp;&nbsp;<span class=" " id="process-chevron" style="font-size:0.6em;font-weight:100;">&gt; more</span> 
 					</h2>
 				</div>
 			</div>
-			
-			<div class="container collapse.in" id="more-process" >
-				<div class="row pad-me background-clr-0">
-					{% include public-process.html %}
-				</div>
-			</div>
-
+		</section>
+		<section class="background-clr-1">
+			{% include public-process.html %}
 		</section>
 
 
-		<section id="team">
+		<section id="team" class="background-clr-0">
 			<div class="container">
 				<div class="row">
 						{% include the-team.html %}
@@ -163,14 +178,16 @@ title: 1532 Harrison
 			</div>
 		</section>
 
-		<section id="residents">
+		<section id="residents" class="background-clr-5">
 			<div class="container">
-				<div class="row background-clr-2">
+				<div class="row background-clr-5">
 					<h2 class="text-center section-title">Meet Prospective Residents</h2>
 				</div>
 			</div>
+		</section>
+		<section class="background-clr-1">
 			<div class="container">
-				<div class="row background-clr-0">
+				<div class="row background-clr-1">
 					<div class="col-md-6 bspecial" >
 						{% include residents-intro.html %}
 					</div>
@@ -185,10 +202,15 @@ title: 1532 Harrison
 			</div>
 		</section>
 
-		<section id="contact">
+		<section id="contact" class="background-clr-0">
 			{% include contact.html %}
- 		</section>
+		</section>
 
 		{% include modal.html %}
+		{% include analytics.html%}
 	</body>
 </html>
+
+
+
+

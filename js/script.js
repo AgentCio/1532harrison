@@ -42,13 +42,23 @@ $(document).ready(function(){
 			console.info("width is > 990.");
 			$("#process-chevron, #rental-alternative-chevron").show();
 			$("#rental-alternative-details, #more-process").hide();	
-
 		}
 	}
-	
 
 	sizeFullScreenImages();
 	// moreInfo();
+	$("#building-drawings").hover(function() {
+		$(this).css( 'cursor', 'col-resize' );
+		 $(".volume-chevron").fadeIn("fast");
+	}, function(){
+		$(".volume-chevron").fadeOut("fast");
+	});
+	$( '#more-process-header' ).hover(function() {
+		$(this).css( 'cursor', 'pointer' );
+	});
+	$( '#rental-alternative-header' ).hover(function() {
+		$(this).css( 'cursor', 'pointer' );
+	});
 
 	$(window).resize(function() {
 		sizeFullScreenImages();
@@ -68,22 +78,25 @@ $(document).ready(function(){
 		});
 	});
 
-var chevronopen = {"-webkit-transition":"all 0.5s ease","transition":"all 0.5s ease","transform":"rotate(90deg)","-webkit-transform":"rotate(90deg)"};
-var chevronclose= {"-webkit-transition":"all 0.5s ease","transition":"all 0.5s ease","transform":"rotate(0deg)","-webkit-transform":"rotate(0deg)"};
+//var copen = {"-webkit-transition":"all 0.5s ease","transition":"all 0.5s ease","transform":"rotate(90deg)"};
+//var cclose= {"-webkit-transition":"all 0.5s ease","transition":"all 0.5s ease","transform":"rotate(0deg)"};
+
+//var copen = {"border":"1px solid red","-webkit-transform":"rotate(90deg)"};
+//var cclose= {"border":"1px solid blue","-webkit-transform":"rotate(0deg)"};
 
 	$("#rental-alternative-details").on("show.bs.collapse", function () {
-		$("#rental-alternative-chevron").css(chevronopen);
+		$("#rental-alternative-chevron").html("&lt; less");
 	});
 	$('#rental-alternative-details').on('hide.bs.collapse', function () {
-		$("#rental-alternative-chevron").css(chevronclose);
+		$("#rental-alternative-chevron").html("&gt; more");
 	});
 
 
 	$("#more-process").on("show.bs.collapse", function () {
-		$("#process-chevron").css(chevronopen);
+		$("#process-chevron").html("&lt; less");
 	});
 	$('#more-process').on('hide.bs.collapse', function () {
-		$("#process-chevron").css(chevronclose);
+		$("#process-chevron").html("&gt; more");
 	});
 
 

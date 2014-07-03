@@ -2,7 +2,8 @@
 /* No media query since this is the default in Bootstrap */
 @media (max-width: @screen-phone) { /* "phone" */
 	#mission-statement p{
-		top:55px;
+		/*top:55px;*/
+		top:-680px;
 		font-size:1.0em;
 	}
 	.private{
@@ -27,6 +28,9 @@
 	#neighborhood-map{
 		background-size:contain;
 	}
+	.text-block{
+		height:auto;
+	}
 
 }
 
@@ -44,11 +48,16 @@
 	.rental-alternative-body{
 		padding-left:40px;
 	}
+	.text-block{
+		height:auto;
+	}
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
 	#mission-statement {
-		top: 100px;
+		/*top: 100px;*/
+		top: -650px;
+		left: 0px;
 		/*width: 700px;*/
 		/*left: 50%;*/
 		/*margin-left: -350px;*/
@@ -72,7 +81,8 @@
 
 	#primary-nav{
 		li{
-			text-align:right;
+			text-align:center;
+			padding-right:0;
 		}
 	}
 	
@@ -97,20 +107,22 @@
 			overflow: visible!important;
 		}
 		li {
-			width: 11%;
+			/*width: 11%;*/
 		}
-		li.m_project			{width:10%;}
-		li.m_plaza				{width:7%;}
-		li.m_coliving			{width:14%;}
-		li.m_neighborhood	{width:18%;}
-		li.m_process			{width:10%;}
-		li.m_team					{width:5%;}
-		li.m_residents		{width:13%;}
-		li.m_contact			{width:17%;}
+		li.m_project			{width:11.2%;}
+		li.m_plaza			{width:8.32%;}
+		li.m_coliving			{width:12.22%;}
+		li.m_neighborhood		{width:16.66%;}
+		li.m_process			{width:11.59%;}
+		li.m_team			{width:8.87%;}
+		li.m_residents			{width:12.55%;}
+		li.m_contact			{width:15.67%;}
 	}/*end #primary-nav */
 	
 	#mission-statement {
-		top: 130px;
+		/*top: 130px;*/
+		top:-650px;
+		left: 0px;
 		.mission-text{
 			margin-left:8.33333333%; 
 			width:83.3333333%;
@@ -122,11 +134,17 @@
 	.facebook, .twitter{
 		padding-left:0px;
 	}
+
+        #nav-space{
+                width:940px;
+                margin: 0 auto;
+        }
 	
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) {
 	#mission-statement {
+		top: -680px;
 		.mission-text{
 			p{
 				font-size:1.6em;
@@ -136,5 +154,9 @@
 	#resident-profiles .top-border{
 		left:7%;
 		right:7%;
+	}
+	#nav-space{
+		width:1104px;
+		margin: 0 auto;
 	}
 }
