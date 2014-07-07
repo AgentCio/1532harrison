@@ -62,7 +62,9 @@ function mce_init_form(){
       var options = { errorClass: 'mce_inline_error', errorElement: 'div', onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
       var mce_validator = $("#mc-embedded-subscribe-form").validate(options);
       $("#mc-embedded-subscribe-form").unbind('submit');//remove the validator so we can get into beforeSubmit on the ajaxform, which then calls the validator
-      options = { url: 'http://barretto-co.us8.list-manage1.com/subscribe/post-json?u=4e04e110328ef1a2267412328&id=10eec2d72d&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+	//1532harrison.us8.list-manage.com/subscribe/post?u=f319981736174af6a3d87ad0d&amp;id=5c5b5f5888
+      //options = { url: 'http://barretto-co.us8.list-manage1.com/subscribe/post-json?u=4e04e110328ef1a2267412328&id=10eec2d72d&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
+      options = { url: 'http://1532harrison.us8.list-manage.com/subscribe/post-json?u=f319981736174af6a3d87ad0d&id=5c5b5f5888&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
                     beforeSubmit: function(){
                         $('#mce_tmp_error_msg').remove();
                         $('.datefield','#mc_embed_signup').each(
