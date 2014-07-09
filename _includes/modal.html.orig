@@ -1,3 +1,5 @@
+		<!-- Modal -->
+		
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
@@ -7,7 +9,7 @@
 					</div>
 					<div class="modal-body">
 						<div id="mc_embed_signup">
-							<form action="//1532harrison.us8.list-manage.com/subscribe/post?u=f319981736174af6a3d87ad0d&amp;id=5c5b5f5888" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<form action="http://barretto-co.us8.list-manage.com/subscribe/post?u=4e04e110328ef1a2267412328&amp;id=10eec2d72d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 								<div class="form-group">
 									<label for="mce-EMAIL">Email Address (required)</label>
 									<input type="email" value="" name="EMAIL" class="required email form-control" id="mce-EMAIL" placeholder="Email Address">
@@ -25,7 +27,7 @@
 									<div class="response" id="mce-success-response" style="display:none"></div>
 								</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 								<div style="position: absolute; left: -5000px;">
-									<input type="text" name="b_f319981736174af6a3d87ad0d_5c5b5f5888" tabindex="-1" value="">
+									<input type="text" name="b_4e04e110328ef1a2267412328_10eec2d72d" value="">
 								</div>
 								<div class="modal-footer">
 									<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="primary-button" style="display:inline-block;">

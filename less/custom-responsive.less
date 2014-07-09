@@ -26,7 +26,8 @@
 		background-color:@white;
 	}
 	#neighborhood-map{
-		background-size:contain;
+		background-size: cover;;
+		background-position: left center;
 	}
 	.text-block{
 		height:auto;
@@ -54,6 +55,9 @@
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) {
+       #neighborhood-map{
+                 background-position: center center;
+        } 
 	#mission-statement {
 		/*top: 100px;*/
 		top: -650px;
@@ -76,7 +80,6 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md-min) {
-
 
 
 	#primary-nav{

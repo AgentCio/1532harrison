@@ -5861,6 +5861,9 @@ li {
   padding-top: 40px;
   padding-left: 40px;
 }
+#contact .primary-button {
+  background-color: #ffffff;
+}
 .text-block {
   padding: 40px 40px 0px 40px;
   height: 460px;
@@ -6221,7 +6224,7 @@ li {
   background: url('../img/map.jpg');
   height: 460px;
   background-repeat: no-repeat;
-  background-position: center  center;
+  background-position: left  center;
   background-color: #ffffff;
 }
 .private {
@@ -6241,6 +6244,7 @@ li {
 }
 .clean li {
   list-style-type: none;
+  padding-bottom: 0.5em;
 }
 .drag-swipe {
   padding-top: 0px;
@@ -6265,6 +6269,12 @@ h2,
 h3,
 .h3 {
   font-weight: 300;
+}
+#neighborhood p {
+  font-size: 1.2em;
+}
+#plaza-details p {
+  font-size: 1.1em;
 }
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -6296,7 +6306,8 @@ h3,
     background-color: #ffffff;
   }
   #neighborhood-map {
-    background-size: contain;
+    background-size: cover;
+    background-position: left center;
   }
   .text-block {
     height: auto;
@@ -6322,6 +6333,9 @@ h3,
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  #neighborhood-map {
+    background-position: center center;
+  }
   #mission-statement {
     /*top: 100px;*/
     top: -650px;
