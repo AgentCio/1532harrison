@@ -1,4 +1,19 @@
 <IfModule pagespeed_module>
-    ModPagespeed off
+ModPagespeed on
+ModPagespeedEnableFilters extend_cache
+ModPagespeedEnableFilters recompress_images,convert_jpeg_to_progressive,strip_image_meta_data,convert_jpeg_to_webp,inline_images
+ModPagespeedEnableFilters collapse_whitespace
+ModPagespeedEnableFilters rewrite_style_attributes
+ModPagespeedEnableFilters rewrite_css,sprite_images
+ModPagespeedEnableFilters inline_preview_images
+ModPagespeedEnableFilters resize_mobile_images
+ModPagespeedEnableFilters rewrite_javascript
+ModPagespeedEnableFilters prioritize_critical_css
+ModPagespeedEnableFilters insert_dns_prefetch
+ModPagespeedEnableFilters remove_comments
+ModPagespeedEnableFilters combine_javascript
+
+
 </IfModule>
+
 ErrorDocument 404 "/404.html"
