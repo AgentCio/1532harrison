@@ -1,6 +1,6 @@
 <IfModule pagespeed_module>
-ModPagespeed on
-ModPagespeedEnableFilters extend_cache
+ModPagespeed off
+#ModPagespeedEnableFilters extend_cache # BV: use with care wrt Cloudflare's settings.
 ModPagespeedEnableFilters recompress_images,convert_jpeg_to_progressive,strip_image_meta_data,convert_jpeg_to_webp,inline_images
 ModPagespeedEnableFilters collapse_whitespace
 ModPagespeedEnableFilters rewrite_style_attributes

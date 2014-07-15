@@ -6224,7 +6224,7 @@ li {
   background: url('../img/map.jpg');
   height: 460px;
   background-repeat: no-repeat;
-  background-position: left  center;
+  background-position: 15%  center;
   background-color: #ffffff;
 }
 .private {
@@ -6307,7 +6307,7 @@ h3,
   }
   #neighborhood-map {
     background-size: cover;
-    background-position: left center;
+    background-position: 15% center;
   }
   .text-block {
     height: auto;
